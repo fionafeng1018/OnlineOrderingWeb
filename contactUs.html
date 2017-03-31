@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+
+Finished by: Jeehee choi & form validated by Chao Feng
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Contact Us</title>
+<link href="contact.css" rel="stylesheet" type="text/css"/>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+
+<body>
+		<header>
+    		<nav id="headnav">
+        		<ul>
+            		<li><a href="index.html">Home</a></li>
+                	<li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order Now</a></li>
+                	<li><a href="contactUs.html">Contact US</a></li>
+                	<li><a href="aboutUs.html">About US</a></li> 
+             	</ul>             
+        	</nav>
+	  	</header>
+   <div class="contents">     
+    <div class="header">
+      <h1><span>Pizza</span><span>shop</span></h1>
+    </div>
+    <div class="main">
+      <div class="container">
+        <h1>PIZZA's is always interested in what our customers have to say. <br/>
+            If you have questions or other comments concerning our products, etc, please call, write, or e-mail us. 
+            Thanks for your consideration! </h1>        
+        <h4>Contact Us</h4>
+        <div class="contact" >        
+            <h5>Email Us:</h5>
+            <p>pizzashop@gmail.com</p>
+            <h5>Write Us:</h5>
+            <p>Pizza Shop, <br/>
+               P.O. Box 631, Station A <br/>
+               Toronto, Ontario <br/>
+               Canada M1K 5E9</p>
+            <h5>Call Us:</h5>
+            <p>1-800-268-4419</p>
+          </div>  
+       <h4>Connect Us</h4>
+       <a href="https://www.facebook.com/centennialcollege">				
+          <img src="images/facebook.jpg" alt="fb"/>
+       </a>
+       <a href="https://www.instagram.com/centennialcollege/?hl=en">
+          <img src="images/instagram.jpg" alt="in"/>
+       </a>
+       <a href="https://twitter.com/CentennialEDU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">	   
+          <img src="images/twitter.jpg" alt="twi"/>
+       </a>
+       <a href="https://plus.google.com/+centennialcollege/posts">	   
+          <img src="images/gplus.jpg" alt="gplus"/>
+       </a>
+       <a href="https://www.youtube.com/user/CentennialCollegeON">	   
+          <img src="images/youtube.jpg" alt="youtube"/>
+       </a>
+       <h4>Feedback</h4>      
+       <h1>FUTURE PIZZA SHOP is always interested in what our customers have to say. <br/>
+           Please send message if you have questions or other comments. Thanks for your consideration! </h1> 
+         <form>      
+           <input name="name" type="text" class="feedback-input" placeholder="Name" required/>   
+           <input id="email" name="email" type="text" class="feedback-input" placeholder="Email" required/>
+           <div id="emailErr"></div>
+           <textarea name="text" class="feedback-input" placeholder="Message" required ></textarea>
+           <input type="submit" id="send"  value="SEND" onclick="ValidateEmail()"/>
+         </form>
+         <!------------------------------check email------------------------------>
+         <script>
+		 	
+			function ValidateEmail(){
+			var email = document.getElementById("email");
+			var EmailErr = document.getElementById("emailErr");
+			var emailRegex = /^[a-zA-Z0-9]+(\.[_a-zA-Z0-9\-]+)*\@[a-zA-Z]*(\.[a-zA-Z\-]+)*(\.[a-z]{2,4})$/;
+			
+			if(!emailRegex.test(email.value)){
+		
+			EmailErr.innerHTML = "*Please enter an valid email address.";
+			EmailErr.style.display = "block";
+			email.value="";
+			email.style.background="rgb(255,233,233)";
+			return false;
+			}else{
+			EmailErr.innerHTML="";
+			EmailErr.style.display="none";
+			window.alert("Thank you for your feedback!");
+			}
+			}
+
+		 </script>
+       <h4>Locate Us On Map</h4>
+          <div id="map" style="width:600px;height:300px;margin-left:auto;margin-right:auto"></div>
+
+		<script>
+			var mapCanvas = document.getElementById("map");
+			var mapOptions = {
+				center: new google.maps.LatLng(43.653226, -79.383184), 
+				zoom: 11
+				}		
+			var map = new google.maps.Map(mapCanvas, mapOptions);
+		</script>
+         </div>
+      </div> 
+    </div>  
+        
+      <footer>
+       		<div id="footerMedia" style="width: 814px; margin-left:auto;margin-right:auto;text-align:center;padding:10px">       		         
+       <table>
+         <tr> 
+             <td style="width: 233px">
+             <img alt="pizza" height="84" src="images/fav-pizza-img.png" width="112">
+             </td>
+          
+             <td style="width: 600px">
+               <h2>OPENING HOURS</h2>
+               <h3>MON - FRI: 11am - 10pm </h3>
+       		   <h3>SAT - SUN: 11am - 12am</h3>
+             </td>
+             <td style="width: 400px">
+             <h2>ADDRESS</h2>
+       		  <h3>941 Progress Ave, Toronto</h3>
+       		  <h3>ON M1K 5E</h3>
+             </td>
+             <td style="width: 300px">
+             <h2>FOLLOW</h2>
+              <a href="https://www.facebook.com/centennialcollege"><img src="images/facebook.png" alt="fb" width="40px"></a>
+       		  <a href="https://www.instagram.com/centennialcollege/?hl=en"><img src="images/instagram.png" alt="ins" width="40px"></a>
+       		  <a href="https://twitter.com/CentennialEDU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/tuitter.png" alt="twi" width="40px"></a>
+             </td>
+         </tr>        
+       </table> 
+       <p style="color:white;font-size:small">&copy; Copyright 2016 By Future Pizza Shop</p>     		       		         		        		  
+       		</div>       		
+       		
+    		    <!-- footer contents -->
+    </footer>                  
+                
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+﻿/*
+   
+   Finished by: Chao Feng 300843028
+
+*/
+
+/*Nav bar*/
+ul {
+	
+    list-style-type: none;/*Remove bullets*/
+    margin: 0;/*to remove browser default settings*/
+    padding: 0;
+    overflow: hidden;
+	background-color:rgba(30,30,30,1.00);
+	opacity:0.9;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;/*whole link area clickable*/
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.active{
+	background-color:hsla(356,65%,58%,1.00);
+}
+/*Nav bar End!!*/
+
+div.pizza{
+	width:50%;
+	float:left;		
+	padding-top:50px;
+	font-size:13px;
+}
+div.allPizza{
+	background-color:white;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	margin-top:auto;
+}
+
+body{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:top;
+	background-attachment:fixed;
+
+}
+
+/*Font appearence*/
+h2{
+	color:rgba(99,99,99,1.00);
+	
+}
+
+.mainText{
+	width: 30%;
+	float: right;
+	color: black;
+	font-size: 60px;
+	margin-top: 50px;
+	font-family: "Brush Script MT";
+}
+footer{
+	margin-top:50px;
+	background-color:#222222;
+	height:100px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+button{/*order button*/
+	margin-top:50px;
+	border:medium;
+	width:200px;
+	text-align:center;
+	border-style:solid;
+	border-color:rgba(34,34,34,1.00);
+	background-color:transparent;
+	color:rgba(34,34,34,1.00);
+	margin-left:auto;
+	margin-right:auto;
+	font-weight:bold;
+	padding:14px 14px;
+	
+}
+
+button:hover{
+	background-color:rgba(33,33,33,1.00);
+	opacity:0.8;
+	color:white;
+}
+

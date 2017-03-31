@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--
+   
+   Finished by: Chao Feng 300843028
+
+-->
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+   <title>Order Now</title>
+   <link rel="stylesheet" href="order.css">
+   <script src="jquery-1.12.2.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <script src="script.js"></script>
+</head>
+
+<body>
+   <div id="mainImg"><!--nav bar-->
+		<header>
+    		<nav id="headnav">
+        		<ul>
+            	    <li><a href="index.html">Home</a></li>
+                	<li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order Now</a></li>
+                	<li><a href="contactUs.html">Contact US</a></li>
+                	<li><a href="aboutUs.html">About US</a></li>               	             
+             	</ul>             
+        	</nav>
+	  	</header>
+   </div><!--nav bar end-->
+   
+
+<!--main div-->
+<div class="mainDiv" style="overflow:hidden">
+   <div class="title"><!--title part-->
+  	 <h1 style="padding-top:50px;">Order Now</h1>
+   	 <h6>You can find the most delicious pizza in our shop, order here for free delivery.</h6>
+     <h6>Just check what ever you want.</h6>
+     <hr style="width:80%">
+   </div>
+   <div id="menuAndCheck" style="width:90%;margin-left:auto;margin-right:auto;">
+   		<div id="menuBar" style="width:68%;float:left;"><!--left(menu)-->
+        <p>You Can Choose Your Own Toppings</p>
+        	<div class="pizza" id="pizza1"><!--pizza 1-->
+            	<img src="images/menu pic/std_double_pep-compressed.jpg" alt="Pepperoni">
+                <p class="pizzaName">Classic Pepperoni</p>
+                <p class="price">$11</p>
+            </div>
+   		                                          
+            <div class="pizza" id="pizza2"><!--pizza 2-->
+            	<img src="images/menu pic/sma_SpicyItalian_m-compressed.jpg" alt="Pepperoni">
+                <p class="pizzaName">Classic Italian</p>
+                <p class="price">$11</p>                         
+            </div>
+
+             <div class="pizza" id="pizza3"><!--pizza 3-->
+      			<img src="images/menu pic/std_JohnsFav-compressed.jpg" alt="Jumbo">
+      			<p class="pizzaName">Jumbo Deluxe</p>
+                <p class="price">$13</p> 
+      		</div>
+            
+          <div class="pizza" id="pizza4"><!--pizza 4-->
+      			<img src="images/menu pic/std_TheMeats-compressed.jpg" alt="Meat">
+      			<p class="pizzaName">Meat Lover</p>
+                <p class="price">$13</p> 
+      		</div>
+
+          <div class="pizza" id="pizza5"><!--pizza 5-->
+      			<img src="images/menu pic/std_HawaiianBBQ-compressed.jpg" alt="Seafood">
+      			<p class="pizzaName">Seafood Deluxe</p>
+                <p class="price">$15</p> 
+      		</div>
+
+          <div class="pizza" id="pizza6"><!--pizza 6-->
+      			<img src="images/menu pic/std_BBQChknBcn-compressed.jpg"  alt="Spicy Chicken">
+      			<p class="pizzaName">Spicy Chicken</p>
+                <p class="price">$15</p> 
+      		</div>
+
+          <div class="pizza" id="pizza7"><!--pizza 7-->
+      			<img src="images/menu pic/std_TheWorks-compressed.jpg"  alt="Tuna">
+      			<p class="pizzaName">Tuna Deluxe</p>
+                <p class="price">$15</p> 
+      		</div>
+            
+          <div class="pizza" id="pizza8"><!--pizza 8-->
+      			<img src="images/menu pic/std_1topCheese_m-compressed.jpg"   alt="Veggie Special">
+      			<p class="pizzaName">Veggie Special</p>
+                <p class="price">$15</p> 
+      		</div>
+           <script> // jQuery: slide down
+						$(document).ready(function(){
+    						$(".pizza").click(function(){
+        					$("#choice").slideDown("slow");
+    					});
+					});
+					</script>  
+     </div><!--Menu Bar end-->
+    
+        <div id="checkOut" style="width:30%;float:left;background:rgba(0,0,0,1.00);color:white;opacity:0.8"><!--right-->
+        	<form>
+        		<div>
+        			<h2 style="font-family:Brush Script MT;">Your Choice</h2>
+        		</div>
+            	<div style="width: 80%;margin-left:auto;margin-right:auto;">                	
+					<h3 id="flip0">Pizza</h3>											
+                     <script> // jQuery: slide down
+						$(document).ready(function(){
+    						$("#flip0").click(function(){
+        					$("#choice").slideToggle("slow");
+    					});
+					});
+					</script>                   
+						<div id="choice" style="overflow:hidden">
+                        	<div style="width:80%;float:left">
+							<input checked="false" name="pizza" type="radio" value="11" id="item1">Pepperoni<br>
+                        	<input checked="false" name="pizza" type="radio" value="11" id="item2">Classic Italian<br>
+                        	<input checked="false" name="pizza" type="radio" value="13" id="item3">Jumbo Deluxe<br>
+                        	<input checked="false" name="pizza" type="radio" value="13" id="item4">Meat Lover<br>
+                        	<input checked="false" name="pizza" type="radio" value="15" id="item5">Seafood Deluxe<br>
+                        	<input checked="false" name="pizza" type="radio" value="15" id="item6">Spicy Chicken<br>
+                       		<input checked="false" name="pizza" type="radio" value="15" id="item7">Tuna Deluxe<br>
+                        	<input checked="false" name="pizza" type="radio" value="15" id="item8">Veggle Special<br>
+                            </div>
+                            <div style="width:20%;float:right">
+                        		$11<br>
+                                $11<br>
+                                $13<br>
+                                $13<br>
+                                $15<br>
+                                $15<br>
+                                $15<br>
+                                $15<br>
+                        	</div>
+                        </div>
+								
+			        <div>
+        				<h3 id="flip1">Cheese</h3>	
+        			</div>					
+                     <script> // jQuery: slide down
+						$(document).ready(function(){
+    						$("#flip1").click(function(){
+        					$("#cheese").slideToggle("slow");
+    					});
+					});
+					</script>
+					<div id="cheese" style="overflow:hidden">
+                    	<div style="width:80%;float:left">
+							<input checked="false" name="cheese" type="radio" value="0" id="item9">Regular Cheese<br>
+                        	<input checked="false" name="cheese" type="radio" value="2" id="item10">Double Cheese<br>
+                        </div>
+                        <div style="width:20%;float:right">
+                        	$0<br>
+                        	$2<br>
+                     	</div>
+                    </div>
+					 
+                   
+                    <div>
+        				<h3 id="flip2">Toppings</h3>	
+        			</div>
+                       <script> // jQuery: slide down
+						$(document).ready(function(){
+    						$("#flip2").click(function(){
+        					$("#topping").slideToggle("slow");
+    					});
+					});
+					</script>
+                    <div id="topping" style="overflow:hidden">
+                    	<div style="width:80%;float:left">
+                    	<input name="toppings" type="checkbox" value="2" id="item11">Black Olives<br>
+                        <input name="toppings" type="checkbox" value="2" id="item12">Broccoli<br>
+                        <input name="toppings" type="checkbox" value="2" id="item13">Tomato<br>
+                        <input name="toppings" type="checkbox" value="2" id="item14">Mushrooms<br>
+                        <input name="toppings" type="checkbox" value="2" id="item15">Green Peppers<br>
+                        <input name="toppings" type="checkbox" value="3" id="item16">Chicken<br>
+                        <input name="toppings" type="checkbox" value="3" id="item17">Sausage<br>
+                        <input name="toppings" type="checkbox" value="3" id="item18">Beef<br>
+                        </div>
+                        <div style="width:20%;float:right">
+                        $2<br>
+                        $2<br>
+                        $2<br>
+                        $2<br>
+                        $2<br>
+                        $3<br>
+                        $3<br>
+                        $3<br>
+                        </div>
+                    </div>
+                    
+                    <div>
+        				<h3 id="flip3">Quantity</h3>	
+        			</div>					
+                     <script> // jQuery: slide down
+						$(document).ready(function(){
+    						$("#flip3").click(function(){
+        					$("#quantity").slideToggle("slow");
+    					});
+					});
+					</script>
+                    <div id="quantity" >
+                    	More: <input type="number" id="number" style="width:70%;">
+                    </div>                   					
+				</div>
+                
+			</form>
+			<button id="add" type="button" onClick="calcTotal()">ADD</button>
+              <script> // jQuery: slide down
+						$(document).ready(function(){
+    						$("#add").click(function(){
+        					$("#result").slideDown("slow");
+    					});
+					});
+					</script>
+			<div id="result" style="width:80%;margin-left:auto;margin-right:auto;padding:5px;color:white;">
+				<p >CHOICE</p>
+				<p id="pizzaName" style="font-weight:bold;"></p>
+                <p>TOPPINGS</p>
+                <p id="toppingPrint" style="font-weight:bold;"></p>
+                <p>CHEESE</p>
+                <p id="cheesePrint" style="font-weight:bold;"></p>
+				<p id="total">Total:</p>
+                <p id="tax">Tax:</p>
+                <p id="totalWithTax">Total with tax:</p>				
+			</div>
+            <button id="check" type="button" onClick="openCheck()" style="margin-bottom:40px">CHECK OUT</button>
+            <script>
+			function openCheck(){
+				window.open("check_out.html");
+			}
+            </script>
+        </div>
+		<!--right-->
+   </div><!--Menu & check end-->
+</div>
+      <footer>
+       		<div id="footerMedia" style="width: 600px;margin-left:auto;margin-right:auto;text-align:center;padding:10px">
+       		  <img src="images/facebook.png" alt="fb" style="width:40px;height:40px">
+       		  <img src="images/instagram.png" alt="ins" style="width:40px;height:40px">
+       		  <img src="images/tuitter.png" alt="twi" style="width:40px;height:40px">
+       		  <p style="color:white;font-size:small">&copy; Copyright 2016 By Future Pizza Shop</p>
+       		</div>
+      </footer>  
+ 
+</body>
+
+</html>
+

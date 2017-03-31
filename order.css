@@ -1,0 +1,143 @@
+﻿/* CSS Document */
+/*
+   
+   Finished by: Chao Feng 300843028
+
+*/
+/*Nav bar*/
+ul {
+	
+    list-style-type: none;/*Remove bullets*/
+    margin: 0;/*to remove browser default settings*/
+    padding: 0;
+    overflow: hidden;
+	background-color:rgba(25,25,25,1.00);
+	opacity:0.9;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;/*whole link area clickable*/
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color:rgba(76,76,76,1.00);
+}
+.active{
+	background-color:hsla(356,65%,58%,1.00);
+}
+/*Nav bar End!!*/
+div.pizza{
+	width:30%;	
+	padding-top:50px;
+	font-size:13px;
+	float:left;
+}
+div.pizza:hover{
+	background:rgba(21,21,21,1.00);
+	color:white;
+	opacity:0.9;
+}
+div.mainDiv{
+	background-color:white;
+	width:975px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	margin-top:30px;
+	overflow:hidden;/*making small div inside a big div*/
+}
+
+body{
+	background:rgba(58,58,58,1.00);
+	background-size:contain;
+	background-repeat:no-repeat;
+	}
+
+/*Font appearence*/
+h2{
+	color:rgba(99,99,99,1.00);	
+}
+
+.mainText{
+	width: 30%;
+	float: right;
+	color: #FFFFFF;
+	font-size: 60px;
+	margin-top: 50px;
+	font-family: "Brush Script MT";
+}
+footer{
+	margin-top:50px;
+	background-color:#222222;
+	height:100px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+img{
+	width:150px; 
+	height:100px;
+}
+td{
+	text-align: left;
+	padding-left: 20px;
+	font-family: "Bradley Hand ITC";
+	text-decoration: none;
+}
+
+
+#choice,#topping,#cheese,#result,#quantity{
+	text-align:left;
+	display: none;
+}
+.pizzaName {
+	font-family: "Bradley Hand ITC";
+	font-weight: bold;
+}
+button{/*order button*/
+	margin-top:10px;
+	border:medium;
+	width:200px;
+	text-align:center;
+	border-style:solid;
+	border-color:white;
+	background-color:transparent;
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	font-weight:bold;
+	padding:14px 14px;	
+}
+button:hover{
+	background-color:white;
+	color:rgba(0,0,0,1.00);
+	opacity:0.8;
+}
+h3{
+		 background:rgba(236,219,192,1.00);
+		 color:rgba(51,51,51,1.00);
+		 font-weight:bold;
+		 height:40px;
+		 font-family:"Brush Script MT";	
+		 padding:7px;	 
+	 }
+ h3:hover{
+		 color:white;
+		 background:rgba(83,83,83,1.00);
+	 }
+footer{
+	margin-top:50px;
+	background-color:#222222;
+	height:100px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+

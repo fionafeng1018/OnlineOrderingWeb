@@ -1,0 +1,151 @@
+﻿/*
+   
+   Finished by: Chao Feng 300843028
+
+*/
+
+/*Words format*/
+#allPage{
+	 margin-left:auto;
+	 margin-right:auto;
+	 width:100%;
+	 font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+div#banner{
+	background:url(images/pizza1.png) repeat 0 0;
+	height:650px;
+	width:100%;
+	margin:auto;	
+	}
+/*Nav bar*/
+ul {
+	
+    list-style-type: none;/*Remove bullets*/
+    margin: 0;/*to remove browser default settings*/
+    padding: 0;
+    overflow: hidden;
+	background-color:rgba(25,25,25,1.00);
+	opacity:0.9;
+	}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;/*whole link area clickable*/
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color:rgba(76,76,76,1.00);
+}
+.active{
+	background-color:hsla(356,65%,58%,1.00);
+}
+/*Nav bar End!!*/
+
+/*main texy*/
+#mainText{
+	margin-top:150px;
+	text-align:center;
+	color: white;
+	}
+.bannerText1{
+	font-size: 36px;
+	font-family: "Blackadder ITC";
+	font-weight: bold;
+}
+.bannerText2{
+	font-family: "Arial Black";
+	font-size: 80px;
+}
+.fromToronto{
+	font-family: "Bradley Hand ITC";
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+button{/*order button*/
+	margin-top:50px;
+	border:medium;
+	width:200px;
+	text-align:center;
+	border-style:solid;
+	border-color:white;
+	background-color:transparent;
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	font-weight:bold;
+	padding:14px 14px;
+	
+}
+#contact{/*contact button*/
+	margin-top:50px;
+	border:medium;
+	width:200px;
+	text-align:center;
+	border-style:solid;
+	border-color:rgba(34,34,34,1.00);
+	background-color:transparent;
+	color:rgba(34,34,34,1.00);
+	margin-left:auto;
+	margin-right:auto;
+	font-weight:bold;
+	padding:14px 14px;
+}
+button:hover{
+	background-color:rgba(33,33,33,1.00);
+	opacity:0.8;
+}
+hr{	
+	height:8px;
+	color:#222222;
+	background:#222222;
+	border:none;
+	margin-top:0px;"
+}
+
+
+
+div{
+	/*border-style:solid;
+	border-width:thin;*/
+	}
+#middlediv{
+	width:700px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;		
+}
+
+/*footer*/
+footer{
+	margin-top:40px;
+	background-color:#222222;
+	height:160px;
+}
+h3 {
+	color: white;
+	font-size: small;
+	font-weight: lighter;
+	font-family: 'Open Sans', sans-serif;
+}
+h2 {
+	color: white;
+	font-size: medium;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+
+td {
+	 height:50px;
+	 padding: 1px;
+}
+
+

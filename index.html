@@ -1,0 +1,133 @@
+<!doctype html>
+<!--
+   
+   Finished by: Chao Feng 300843028
+
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pizza Delivery</title>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<script src="script.js"></script>
+<script src="jquery-1.12.2.js"></script>
+</head>
+
+<body>
+<div id="allPage">
+	<!--mainImg Start-->
+    <div id="banner">
+    	<header>
+    		<nav id="headnav">
+        		<ul>
+            		<li><a href="index.html">Home</a></li>
+                	<li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order Now</a></li>
+                	<li><a href="contactUs.html">Contact US</a></li>
+                	<li><a href="aboutUs.html">About US</a></li>  
+             	</ul>             
+        	</nav>
+	  	</header>
+     	<div id="mainText">
+     		<text class="bannerText1">The</text><br>
+			<text class="bannerText2">PIZZA SHOP</text><br>
+        	<text class="fromToronto">FROM TORONTO</text>
+        	<br>
+        	<button id="order" type="button" onClick="openOrder()">ORDER NOW</button>
+            <script>
+			function openOrder(){
+				window.open("order.html");
+			}
+            </script>
+     	</div>
+    </div><!--mainImg End-->
+    <hr>
+	<script>//animate background
+		(function($) {
+			var x=0;
+			var y=0;
+			//cache a reference to the banner
+			var backPicture =$("#banner");
+			
+			//set initial picture background position
+			 backPicture.css('backgroundPosition', x + 'px' + ' ' + y + 'px');
+			 
+			 //scroll up background position every 90 milliseconds
+			 window.setInterval(function() {
+				backPicture.css('backgroundPosition', x + 'px' + ' ' + y + 'px');
+				 y--;
+			 }, 90);
+		})(jQuery);
+    </script>
+
+ <!-- middle div -->
+    <div id="middlediv" >
+    	<p id="flip" style="font-size:56px;font-family:Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif;color:hsla(0,0%,13%,1.00)">
+       CLICK TO SEE OUR PASSION</p>
+       
+       <script> // jQuery: slide down
+			$(document).ready(function(){
+    			$("#flip").click(function(){
+        		$("#panel").slideToggle("slow");
+    			});
+			});
+		</script>
+ 
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+}
+#panel { 
+    display: none;
+}
+</style>
+        <div id="panel">
+        <p  style="color:hsla(0,0%,57%,1.00);padding:0px 50px 50px 50px;font-size:14px;line-height:200%;">Our pizza is a division of YUM! Brands Inc., the world’s largest restaurant company with 38,000+ Restaurants in over 110 countries, including brands like MC, Pizza Hut and Taco Bell. There are more than 7,500 Future Pizza units in the U.S. and 3,500 units in 94 countries and territories around the world.*</p>
+        
+        <img src="images/pizza2.png" alt="smallpizza" style="width:80%">
+        <button id="contact" type="button" onClick="openContact()">CONTACT US</button>
+        <script>
+			function openContact(){
+				window.open("contactUs.html");
+			}
+            </script>
+       </div>
+    </div>
+
+      <footer>
+       		<div id="footerMedia" style="width: 814px; margin-left:auto;margin-right:auto;text-align:center;padding:10px">       		         
+       <table>
+         <tr> 
+             <td style="width: 233px">
+             <img alt="pizza" height="84" src="images/fav-pizza-img.png" width="112">
+             </td>
+          
+             <td style="width: 600px">
+               <h2>OPENING HOURS</h2>
+               <h3>MON - FRI: 11am - 10pm </h3>
+       		   <h3>SAT - SUN: 11am - 12am</h3>
+             </td>
+             <td style="width: 400px">
+             <h2>ADDRESS</h2>
+       		  <h3>941 Progress Ave, Toronto</h3>
+       		  <h3>ON M1K 5E</h3>
+             </td>
+             <td style="width: 300px">
+             <h2>FOLLOW</h2>
+              <a href="https://www.facebook.com/centennialcollege"><img src="images/facebook.png" alt="fb" width="40px"></a>
+       		  <a href="https://www.instagram.com/centennialcollege/?hl=en"><img src="images/instagram.png" alt="ins" width="40px"></a>
+       		  <a href="https://twitter.com/CentennialEDU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/tuitter.png" alt="twi" width="40px"></a>
+             </td>
+         </tr>        
+       </table> 
+       <p style="color:white;font-size:small">&copy; Copyright 2016 By Future Pizza Shop</p>     		       		         		        		  
+       		</div>       		
+       		
+    		    <!-- footer contents -->
+    </footer> 
+       		    
+  </div>      
+    </body>
+</html>

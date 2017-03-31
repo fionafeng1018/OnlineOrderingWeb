@@ -1,0 +1,241 @@
+﻿/*
+
+Finished by: Jeehee choi & Chao Feng
+
+*/
+
+mainImg{
+	background:url(images/pizza1.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	height:800px;
+}
+
+/*Nav bar*/
+ul {
+	
+    list-style-type: none;/*Remove bullets*/
+    margin: 0;/*to remove browser default settings*/
+    padding: 0;
+    overflow: hidden;
+	background-color:rgba(25,25,25,1.00);
+	opacity:0.9;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;/*whole link area clickable*/
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color:rgba(76,76,76,1.00);
+}
+.active{
+	background-color:hsla(356,65%,58%,1.00);
+}
+/*Nav bar End!!*/
+
+.bannerText{
+	margin-top: 250px;
+	text-align: center;
+	font-size: 80px;
+	color: #FFFFFF;
+}
+
+div.picture {
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    right: 100px;
+    height: 300px;
+}
+
+div.introduction {
+    position: absolute;
+    top: 150px;
+    left: 760px;
+    right: 140px;
+    height: 422px;
+  	width: 45%;
+  	font-family: Arial, Helvetica, sans-serif;
+}
+
+div.introduction p {
+	color: #660033;
+	font-size: 30px;
+	text-align: center;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+footer{
+	margin-top:100px;
+	background-color:#222222;
+	height:160px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+
+}
+
+
+h3 {
+	color: white;
+	font-size: small;
+	font-weight: lighter;
+	font-family: 'Open Sans', sans-serif;
+}
+h2 {
+	color: white;
+	font-size: medium;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+
+td {
+	 height:50px;
+	 padding: 1px;
+}
+
+.header h1 {
+    background: #ce2c38;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    height: 140px;
+    margin: 60px auto 0;
+    position: relative;
+    text-align: center;
+    width: 140px;
+    z-index: 10;
+    
+}
+
+.header h1 span {
+    color:#fff;
+    display: block;
+    font-size: 40px;
+    padding: 34px 0 0 0;
+}
+.header h1 span+span {
+    color:#000;
+    display: block;
+    font-size: 28px;
+    padding: 0;
+}
+
+
+
+input {
+  display: none;
+}
+
+.radio {
+	width: 10px;
+	height: 10px;
+	overflow: hidden;
+	margin: 10px 10px 0 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Lato';
+	text-decoration: none;
+	font-size: 14px;
+	color: #000;
+	font-weight: 900;
+	cursor: pointer;
+	border: 2px solid #000;
+	border-radius: 50%;
+	display: inline-block;
+    transition: background-color .4s;
+}
+
+.radio:hover {
+  background-color: #727272;
+}
+
+input:checked ~ .radio {
+	color: #FFF;
+	background-color: #000;
+  opacity: 1;
+}
+
+.img-box {
+  width: 900px;
+  height: 500px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#one, #two, #three, #four {
+  opacity: 0;
+  transition-property: -webkit-transform, opacity;
+  transition-duration: .5s;
+  position: absolute;
+}
+
+#img-1:checked ~ .img-box #one,
+#img-2:checked ~ .img-box #two,
+#img-3:checked ~ .img-box #three,
+#img-4:checked ~ .img-box #four {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+}
+
+#img-1:checked ~ .nav label #dot-1.radio,
+#img-2:checked ~ .nav label #dot-2.radio,
+#img-3:checked ~ .nav label #dot-3.radio,
+#img-4:checked ~ .nav label #dot-4.radio {
+  color: #FFF;
+  background-color: #000;
+}
+
+.nav {
+  width: 120px;
+  margin: 0 auto;
+}
+
+h4 {	
+	text-transform:uppercase;
+	color: #AF9B60;
+	font-size: 21pt;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Bradley Hand ITC";
+}
+.number{
+	color: #AF9B60;
+	font-family: "Bradley Hand ITC";
+	}
+
+.first table {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: medium;
+	height: 400px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.first td {
+	height:20px;
+	width:300px;
+	text-align:center;	
+	padding-right: 30px;
+}
+
+h5{
+	color: #AF9B60;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif
+}
+
+p{
+	font-weight: bold;
+	font-size:20pt;
+	color:black;
+}

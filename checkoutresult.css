@@ -1,0 +1,75 @@
+﻿ul {
+    list-style-type: none;/*Remove bullets*/
+    margin: 0;/*to remove browser default settings*/
+    padding: 0;
+    overflow: hidden;
+	background-color:rgba(25,25,25,1.00);
+	opacity:0.9;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;/*whole link area clickable*/
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color:rgba(76,76,76,1.00);
+}
+.active{
+	background-color:hsla(356,65%,58%,1.00);
+}
+
+div.mainDiv{
+	background-color:white;
+	width:975px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	margin-top:30px;
+	overflow:hidden;/*making small div inside a big div*/
+}
+
+div.title{
+	text-align:center;
+}
+
+body{
+	background:rgba(236,219,193,1.00);
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+
+
+/*footer*/
+footer{
+	margin-top:40px;
+	background-color:#222222;
+	height:160px;
+}
+h3 {
+	color: white;
+	font-size: small;
+	font-weight: lighter;
+	font-family: 'Open Sans', sans-serif;
+}
+h2 {
+	color: white;
+	font-size: medium;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+
+td {
+	 height:50px;
+	 padding: 1px;
+}
